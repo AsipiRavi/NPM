@@ -1,3 +1,3 @@
 # NPM
 NPM Tutorials
-This repository contains NPM Useful commands
+This repository contains useful npm commands

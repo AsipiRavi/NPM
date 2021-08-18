@@ -1,2 +1,75 @@
+About
+==================
+npm is a package manager.
+
+
+Installation
+===================
+npm comes with node
+https://nodejs.org/en/
+
+
+Check Version
+==============
+node -v			- check node version in CLI
+npm -v			- check npm version in CLI
+
+
 NPM Useful Commands
 ===================
+https://docs.npmjs.com/
+
+npm init 						- to initialise npm package, post configuration package.json file with all the configuration details gets created.
+package.json					- it contains package and dependency related info.
+package-lock.json				- it contain default lock configuration, which is important to crosscheck the dependencies and avoid any package breakage(Ensures same installation)
+npm-modules						- This folder contains all the relevent npm modules which have been installed as a part of any package installation.
+
+npm install -g npm@latest		- install latest npm version.
+
+npm install <package name> 		- install package.
+npm install -g <package name> 	- install package globally. which will be available to all the projects.
+npm install <package>@<version>	- install specific version of the package.
+
+npm install <pack> --save-dev	- The package will be saved as dev dependepencies and will not be included in project build.
+
+npm oudated 					- check latest versions availble for already installed packages.
+npm oudated -g					- check latest versions availble for already installed packages globally. 
+
+npm update <package>			- update a package , if it does not work try npm install <package name>
+
+npm uninstall <package>			- remove a package
+
+package@x.y.z (express@1.3.5)	- x is major release, y is minor release and z is patches.
+
+Semantic versioning
+-------------------
+^1.y.z							- ^ it will install latest version of a specified package starting with 1
+
+~1.15.z							- ~ it will install latest version of a specified package starting with 1.15
+
+1.3.5							- it will install that specific version only.
+
+
+npm cache verify 				- to check any cache.
+
+npm cache clean --force			- to clean cache.
+
+npm audit 						- get the list of vulnerabilities and details
+
+npm audit fix					- to fix the vulnerabilities
+
+Scripts
+---------
+https://docs.npmjs.com/cli/v7/using-npm/scripts
+
+you can use predefined script command or you can set you own command.
+
+"Start"							- default
+"thisisstart"					- own command
+
+
+npx
+----
+https://www.npmjs.com/package/npx
+Packages used by npx are not installed globally so you have to carefree for the pollution for the long term.
+Npm is a tool that use to install packages. Npx is a tool that use to execute packages. Packages used by npm are installed globally you have to care about pollution for the long term. 
